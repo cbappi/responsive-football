@@ -1,0 +1,489 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Common Styles */
+body{
+    font-family:'Poppins',sans-serif;
+    background-color:#F2F2F2;
+    margin:0;
+  
+}
+
+/* HEADER STYLE START */
+
+header{
+    background-color: blue;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  
+}
+
+
+.head-half{
+    background-color: blue;
+
+}
+.header-half .div-text{
+    width: 435px;
+    height:230px;
+
+    margin-left: 156px;
+    margin-top: 207px;
+}
+.header-half .button-red{
+    background-color: #E02C6D;
+    color: white;
+    padding: 15px;
+    margin-left: 156px;
+}
+
+.header-half h1{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.filled{
+    color: white;
+    margin-left: 8px;
+}
+.header-half img{
+    width: 556px;
+    height: 438px;
+   margin-top: 153px;
+   transition: width 3s ease-in-out, height 3s ease-in-out;
+}
+.header-half img:hover{
+    width: 606px;
+    height: 488px;
+    transform: rotate(45deg);
+}
+/* HEADER STYLE END */
+
+
+main{
+    display: flex;
+    flex-direction:column;
+  
+    align-items: center;
+  
+}
+/* PLAYERS STYLE START */
+.container-players{
+    margin-top: 50px;
+    width: 1050px;
+    
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.player{
+  
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px 5px grey;
+  }
+
+.player img{
+    width: 330px;
+    height:290px;
+}
+
+
+/* PLAYER STYLE END */
+
+
+/*Footer  */
+
+footer{
+    margin-top: 80px;
+    
+    width:100%;
+    height:180px;
+}
+.footer-box{
+    width: 350px;
+    height: 40px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+}
+.footer-box-img{
+    width: 350px;
+    height: 80px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+}
+.footer-box p{
+    font-size: 15px;
+  
+}
+.footer-box-img img{
+    width: 200px;
+    height: 70px;
+}
+
+   
+.social{
+    display: flex;
+    column-gap: 10px;
+justify-content: center;
+align-items: center;
+}
+.social-symbol{
+    font-size: 28px;
+    color:gray;
+    margin-bottom: 0;
+}
+
+
+/* --------------
+FOOTBALL NEWS
+---------------- */
+
+.photo-album {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.photo-frame {
+    width: 300px;
+    height: 200px;
+    border: 2px solid goldenrod;
+  
+    position: relative;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+
+}
+.photo-detail {
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+}
+
+.photo-detail h3 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+
+
+.photo-frame:hover .photo-detail {
+    display: block;
+    
+}
+
+.photo-frame:hover .photo {
+    transform: scale(1.5) rotate(45deg);
+    transition: transform 2s ease-in-out;
+}
+
+.foot-ball{
+    padding-top: 30px;
+    margin-top: 50px;
+    background-color: blue;
+}
+.foot-ball h1{
+
+    font-size: 40px;
+    color: white;
+}
+
+/* -------------- 
+ALL NEWS
+------------ */
+.all-news{
+    margin-top: 80px;
+   
+    width:100%;
+    height: auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1%;
+    background-color: #D0CFCF;
+}
+.news{
+    
+    height:auto;
+}
+
+/* --------------------
+MIDEA QUERY FOR MOBILE
+----------------------- */
+
+@media only screen and (max-width:688px){
+
+    /* ----------------
+    HEADER STYLE
+    ------------------- */
+    header{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .header-half{
+    
+  flex-direction: column;
+    }
+
+   
+    .header-half h1{
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .header-half .div-text{
+        width: 400px;
+        height:240px;
+        padding: 10px;
+        
+        margin-left: 20px;
+        margin-top: 130px;
+    }
+
+    .header-half .button-red{
+       
+        background-color: #E02C6D;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 40px;
+         margin-left: 20px;
+         font-size: 30px;
+        
+      
+    }
+
+    /* -------------------
+    PLAYER'S STYLE
+    ----------------------- */
+    .container-players{
+        width: 100%;
+    }
+  
+    .players{
+        padding-top: 10px;
+        background-color:ivory;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player{
+
+        flex-direction: column;
+        
+    }
+    .player h3{
+        font-size: 35px;
+    }
+    .player p{
+        font-size: 30px;
+    }
+
+    
+.player img{
+    width: 390px;
+    height:290px;
+}
+
+/* ALL NEWS */
+.all-news{
+    margin-top: 80px;
+   
+    width:100%;
+    height: auto;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    column-gap: 1%;
+    background-color: #D0CFCF;
+}
+
+/* FOOTER */
+
+.footer-box{
+    width: 350px;
+    height: 40px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+.footer-box-img{
+    width: 350px;
+    height: 80px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+.footer-box p{
+    font-size: 15px;
+  
+}
+
+}
+
+
+
+  
+          
+
+
+/* ------------------
+MIDEA QUERY FOR IPAD AND UP
+--------------------- */
+
+@media only screen and (min-width:688px) and (max-width:992px){
+/* -------------------
+FOR HEADER'S STYLE
+---------------------- */
+    header{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .header-half{
+    
+  flex-direction: column;
+    }
+
+   
+    .header-half h1{
+        color: white;
+        font-size: 38px;
+        font-weight: bold;
+    }
+
+    .header-half .div-text{
+        width: 320px;
+        height:280px;
+    
+        margin-left: 80px;
+        margin-top: 170px;
+    }
+
+    .header-half .button-red{
+        background-color: #E02C6D;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+         margin-left: 80px;
+         font-size: 30px;
+        
+      
+    }
+
+    /*---------------------
+     FOR PLAYER'S STYLE
+     ---------------------- */
+    
+    .container-players{
+        width: 100%;
+    }
+  
+    .players{
+        padding-top: 10px;
+       
+        grid-template-columns: repeat(2,1fr);
+    }
+    .player{
+
+        flex-direction: column;
+        
+    }
+
+    
+.player img{
+    width: 380px;
+    height:290px;
+}
+
+/* ALL NEWS */
+.all-news{
+    margin-top: 80px;
+   
+    width:100%;
+    height: auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1%;
+    background-color: #D0CFCF;
+}
+/* Footer */
+.footer-box{
+    width: 450px;
+    height: 40px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+.footer-box-img{
+    width: 450px;
+    height: 80px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+.footer-box p{
+    font-size: 30px;
+  
+}
+.footer-box-img img{
+    width: 200px;
+    height: 70px;
+}
+
+   
+.social{
+    display: flex;
+    column-gap: 10px;
+justify-content: center;
+align-items: center;
+}
+.social-symbol{
+    font-size: 
+    38px;
+    color:gray;
+    margin-bottom: 0;
+}
+
+
+
+
+    
+    
+}
+
+
+
+
+
+
